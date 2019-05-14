@@ -1,7 +1,7 @@
 About r-ergm
 ============
 
-Home: http://statnet.org
+Home: https://statnet.org
 
 Package license: GPL-3
 
