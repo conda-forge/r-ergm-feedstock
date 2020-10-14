@@ -1,4 +1,4 @@
-{% set version = '3.10.4' %}
+{% set version = "3.11.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ergm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ergm/ergm_{{ version }}.tar.gz
-  sha256: 885f0b1a23c5a2c1947962350cfab66683dfdfd1db173c115e90396d00831f22
+  sha256: 4e5506b44badc2343be3657acbf2bca51b47d7c187ff499d5a5e70a9811fe9f2
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -66,11 +66,9 @@ test:
 about:
   home: https://statnet.org
   license: GPL-3
-  summary: An integrated set of tools to analyze and simulate networks based on exponential-family
-    random graph models (ERGMs). 'ergm' is a part of the Statnet suite of packages for
-    network analysis.
+  summary: An integrated set of tools to analyze and simulate networks based on exponential-family random graph models (ERGMs). 'ergm' is a part of the Statnet suite of packages for network analysis.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
