@@ -1,4 +1,4 @@
-{% set version = "4.0.0" %}
+{% set version = "4.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ergm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ergm/ergm_{{ version }}.tar.gz
-  sha256: a536b522e21f44302f113f9e566f21d8d5782063a77a0f5266f33770eb4409b5
+  sha256: bafd3b46e461a731948e6d5d76bba597d65c851955a9e66db1b11145e4d85060
 
 build:
   merge_build_host: true  # [win]
