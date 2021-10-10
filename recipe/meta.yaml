@@ -62,6 +62,9 @@ requirements:
     - r-trust >=0.1.8
 
 test:
+  requires:
+    - libblas * *netlib
+    - libcblas
   commands:
     - $R -e "library('ergm')"           # [not win]
     - "\"%R%\" -e \"library('ergm')\""  # [win]
