@@ -1,11 +1,22 @@
+About r-ergm-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ergm-feedstock/blob/main/LICENSE.txt)
+
 About r-ergm
-============
+------------
 
 Home: https://statnet.org
 
 Package license: GPL-3.0-only
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ergm-feedstock/blob/main/LICENSE.txt)
+Summary: An integrated set of tools to analyze and simulate networks based on exponential-family random graph models (ERGMs). 'ergm' is a part of the Statnet suite of packages for network analysis.
+About r-ergm
+------------
+
+Home: https://statnet.org
+
+Package license: GPL-3.0-only
 
 Summary: An integrated set of tools to analyze and simulate networks based on exponential-family random graph models (ERGMs). 'ergm' is a part of the Statnet suite of packages for network analysis.
 
