@@ -1,6 +1,5 @@
 {% set version = "4.6.0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-ergm
@@ -13,8 +12,7 @@ source:
   sha256: b471a60c39eb5b478e06dd0caf1d085f4b0927f1c260de699f1c8d4fe831a7f7
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -22,7 +20,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
@@ -50,7 +50,6 @@ requirements:
     - r-trust >=0.1.8
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-mass >=7.3.53.1
     - r-matrix >=1.3.2
     - r-rdpack >=2.4
