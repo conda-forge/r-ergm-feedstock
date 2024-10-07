@@ -1,4 +1,4 @@
-{% set version = "4.6.0" %}
+{% set version = "4.7.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ergm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ergm/ergm_{{ version }}.tar.gz
-  sha256: b471a60c39eb5b478e06dd0caf1d085f4b0927f1c260de699f1c8d4fe831a7f7
+  sha256: c9f2523ceb11e641ce85348f024838f79f77afc039a26a54b41baa20fc3881a2
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
