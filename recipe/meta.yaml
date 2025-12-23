@@ -1,4 +1,4 @@
-{% set version = "4.10.1" %}
+{% set version = "4.11.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ergm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ergm/ergm_{{ version }}.tar.gz
-  sha256: 93f30ef0dfd19c1bafc2b2e8fd0bc7782ba7d0edcccf7ac9f21a0b01fdb4293d
+  sha256: 0076f5ad8727ef86194ba8a64ab3e468a47c76832e0e5fdb96caadceed7f61d1
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,6 +36,7 @@ requirements:
     - r-knitr >=1.48
     - r-lpsolveapi >=5.5.2.0_17.12
     - r-magrittr >=2.0.3
+    - r-mass
     - r-memoise >=2.0.1
     - r-network >=1.18.2
     - r-purrr >=1.0.2
@@ -53,6 +54,7 @@ requirements:
     - r-knitr >=1.48
     - r-lpsolveapi >=5.5.2.0_17.12
     - r-magrittr >=2.0.3
+    - r-mass
     - r-memoise >=2.0.1
     - r-network >=1.18.2
     - r-purrr >=1.0.2
