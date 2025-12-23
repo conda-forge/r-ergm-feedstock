@@ -36,6 +36,7 @@ requirements:
     - r-knitr >=1.48
     - r-lpsolveapi >=5.5.2.0_17.12
     - r-magrittr >=2.0.3
+    - r-mass
     - r-memoise >=2.0.1
     - r-network >=1.18.2
     - r-purrr >=1.0.2
@@ -53,6 +54,7 @@ requirements:
     - r-knitr >=1.48
     - r-lpsolveapi >=5.5.2.0_17.12
     - r-magrittr >=2.0.3
+    - r-mass
     - r-memoise >=2.0.1
     - r-network >=1.18.2
     - r-purrr >=1.0.2
